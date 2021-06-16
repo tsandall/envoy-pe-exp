@@ -1,0 +1,51 @@
+{
+    "attributes": {
+        "destination": {
+            "address": {
+                "socketAddress": {
+                    "address": "10.10.10.1",
+                    "portValue": 80
+                }
+            },
+            "principal": "spiffe://cluster.local/ns/default/sa/java-test-ms"
+        },
+        "metadataContext": {},
+        "request": {
+            "http": {
+                "headers": {
+                    ":authority": "api.test.local",
+                    ":method": "POST",
+                    ":path": "/api/java-test-ms/v1/auth/valor",
+                    "accept": "*/*",
+                    "content-length": "0",
+                    "content-type": "application/json",
+                    "user-agent": "curl/7.54.0",
+                    "x-b3-sampled": "0",
+                    "x-b3-spanid": "26f10e5b7b661da6",
+                    "x-b3-traceid": "f90853be3afaaf2a26f10e5b7b661da6",
+                    "x-envoy-attempt-count": "1",
+                    "x-envoy-internal": "true",
+                    "x-forwarded-for": "10.10.10.12",
+                    "x-forwarded-proto": "https",
+                    "x-phanton-token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJvYXV0aC11YXQiLCJpYXQiOjE2MjM4NjcyOTcsImV4cCI6MTY1NTQwMzI5NywiYXVkIjoid3d3LmV4YW1wbGUuY29tIiwic3ViIjoianJvY2tldEBleGFtcGxlLmNvbSIsInNjb3BlIjpbImphdmEtdGVzdC1tczphdXRoLXdpdGgtcGFyYW0tdmFsdWUiLCJqYXZhLXRlc3QtbXM6YXV0aC13aXRoLXZhbHVlcyJdLCJjbGllbnRfaWQiOiJjZHBybyJ9.3vGcodL5Nej1L05Mec3Kr7w8-slTKKHce_21m_F5PW0",
+                    "x-request-id": "c8cb1034-29a1-4ec2-854e-944e3525fb25"
+                },
+                "host": "api.test.local",
+                "id": "14667281650507060672",
+                "method": "GET",
+                "path": "/api/java-test-ms/v1/auth/valor",
+                "protocol": "HTTP/1.1"
+            },
+            "time": "2021-05-22T14:41:40.638786Z"
+        },
+        "source": {
+            "address": {
+                "socketAddress": {
+                    "address": "10.10.10.11",
+                    "portValue": 48350
+                }
+            },
+            "principal": "spiffe://cluster.local/ns/istio-system/sa/istio-ingressgateway-service-account"
+        }
+    }
+}
